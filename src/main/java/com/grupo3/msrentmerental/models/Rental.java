@@ -6,6 +6,8 @@ import java.util.Date;
 
 public class Rental {
     @Id
+    private String id;
+
     private Integer user_id;
     private Date date_start;
     private Date date_finish;
@@ -23,6 +25,14 @@ public class Rental {
         this.date_finish = date_finish;
         this.is_active = is_active;
         this.vehicle_id = vehicle_id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Integer getUser_id() {
