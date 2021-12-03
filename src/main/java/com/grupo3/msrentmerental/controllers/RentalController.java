@@ -33,7 +33,7 @@ public class RentalController {
     }
 
     @PutMapping("/rental/{id}")
-    Rental updateIsActive (@PathVariable String id, @RequestBody Rental rental){
+    Rental cancelRental (@PathVariable String id, @RequestBody Rental rental){
         Rental rentalData = rentalRepository.findById(id).orElseThrow(()-> new RentalNotFoundException("No se encontro una renta con el id: " + id));;
 
         rentalData.setId(id);
