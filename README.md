@@ -23,6 +23,7 @@ Esta aplicación es un microservicio el cual será administrado desde una [api g
 
 - Java 11
 - Spring Boot
+- Mongo DB
 - Docker
 - Heroku
 
